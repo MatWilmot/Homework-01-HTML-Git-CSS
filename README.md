@@ -29,3 +29,7 @@ THEN I find a concise, descriptive title
 4. Go through each ```<img>``` tag and add an ```alt=""``` attribute to make the page more accessible to visually impaired people.
 
 5. Re-word the ```<title>``` element to give the page a more relevant title.
+
+### Notes
+The ```search-engine-optimization``` article was missing an ```id=""``` element in its opening tag. I added one.
+
