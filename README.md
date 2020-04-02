@@ -30,6 +30,7 @@ THEN I find a concise, descriptive title
 
 5. Re-word the ```<title>``` element to give the page a more relevant title.
 
-### Notes
-The ```search-engine-optimization``` article was missing an ```id=""``` element in its opening tag. I added one.
+## Notes
+- The ```search-engine-optimization``` article was missing an ```id=""``` element in its opening tag. I added one.
 
+- The ```Cost Management```'s ```<img>``` tag had a ```</img>``` after it. This isn't necessary, so I removed it.
