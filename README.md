@@ -34,3 +34,22 @@ THEN I find a concise, descriptive title
 - The ```search-engine-optimization``` article was missing an ```id=""``` element in its opening tag. I added one.
 
 - The ```Cost Management```'s ```<img>``` tag had a ```</img>``` after it. This isn't necessary, so I removed it.
+
+- The CSS file was addressing multiple different classes with identical parameters:
+  - ```.benefit-lead```, ```.benefit-brand```, and ```.benefit-cost``` all apply the same **margin** and **color**.
+
+  - ```.benefit-lead h3```, ```.benefit-brand h3```, and ```.benefit-cost h3``` all apply the same **margin** and **text-align**.
+
+  - ```.benefit-lead img```, ```.benefit-brand img```, and ```.benefit-cost img``` all apply the same **display**, **margin**, and **max-width** values.
+
+  - ```.search-engine-optimization```, ```.online-reputation-management```, and ```.social-media-marketing``` all apply identical values.
+
+  - ```.search-engine-optimization img```, ```.online-reputation-management img```, and ```.social-media-marketing img``` all apply the same **max-height** value.
+
+  - ```.search-engine-optimization h2```, ```.online-reputation-management h2```, and ```.social-media-marketing h2``` all apply the same **margin-bottom** and **font-size** values.
+
+  - *I created a new class for ```benefit-lead, benefit-brand, and benefit-cost``` called ```benefits``` and replaced all code reliant on those classes, reducing 9 class rules down to 3.*
+    
+    *Similarly, I replaced ```search-engine-optimization, online-reputation-management, and social-media-marketing``` with a new class called ```article-format``` and replaced all code reliant on those classes, reducing 9 class rules down to 3.*
+
+- The CSS file was not addressing the HTML elements in the order they occurred, I cut and pasted segments of the CSS file to fix this.
